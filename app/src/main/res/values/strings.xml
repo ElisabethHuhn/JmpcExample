@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JmpcExample</string>
+    <string name="screen_title">Screen Title</string>
+    <string name="search_title">Search Title</string>
+    <string name="weather_title">Weather Title</string>
+    <string name="weather_test_title">Weather Test Title</string>
+</resources>
