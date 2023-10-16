@@ -9,9 +9,6 @@ import retrofit2.http.Query
 
 const val appKey = BuildConfig.weatherApiKey
 
-
-//const val sampleUrl = "https://api.openweathermap.org/data/2.5/weather?q=Atlanta,USA&appid=76122ae092e6258c8853080710af3925"
-
 interface WeatherApiService {
     //The secret key must be fetched from BuildConfig, but it is stored in the local properties file
     //The Google Gradle Secrets library moves it from local.properties to the BuildConfig
