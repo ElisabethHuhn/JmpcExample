@@ -3,7 +3,11 @@
 # Introduction
 This project is build for an Android Developer job interview with JPMC. 
 
-A note on naming. I'd love to tell you that the misspelling of JMPC is on purpose so that others won't find my public repository with a simple Google search. But the fact is that I'm very dyslexic and I mix up letters all the time. However when it came time to correct the misspelling, I realized the google search was a real problem, So I didn't correct iy.
+A note on naming. I'd love to tell you that the misspelling of JMPC 
+is on purpose so that others won't find my public repository with a simple Google search. 
+But the fact is that I'm very dyslexic and I mix up letters all the time. 
+However when it came time to correct the misspelling, I realized the google search was a real 
+problem, So I didn't correct it.
 
 The project is an example of State of the Art Android Architecture circa 2023. It uses:
 * Kotlin 100%
