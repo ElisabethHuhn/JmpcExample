@@ -1,10 +1,11 @@
+
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
-//val weatherApiKey: String = gradleLocalProperties(rootDir).getProperty("weatherApiKey")
 
 android {
     namespace = "com.huhn.jmpcexample"
@@ -57,19 +58,19 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.10.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
     //permissions
-    implementation ("androidx.activity:activity-ktx:1.8.0")
+    implementation ("androidx.activity:activity-ktx:1.8.2")
     implementation ("com.google.accompanist:accompanist-permissions:0.33.2-alpha")
 
     //location from google play services
-    implementation ("com.google.android.gms:play-services-location:21.0.1")
+    implementation ("com.google.android.gms:play-services-location:21.1.0")
 //    implementation ("com.example:multiplepermissionsstate:1.0.0")
 
     //compose
-    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
@@ -78,23 +79,23 @@ dependencies {
     implementation("androidx.compose.material3:material3")
 
     // Lifecycle components
-    implementation ("androidx.compose.runtime:runtime-livedata:1.5.0-beta01")
+    implementation ("androidx.compose.runtime:runtime-livedata:1.6.0")
 
     //navigation
-    implementation ("androidx.navigation:navigation-compose:2.5.3")
+    implementation ("androidx.navigation:navigation-compose:2.7.6")
 
     //kotlin coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 
     //coroutine lifecycle scopes
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
 
     //Koin for dependency
 //    implementation ("io.insert-koin:koin-android:3.3.1")
-    implementation("io.insert-koin:koin-androidx-compose:3.4.6")
+    implementation("io.insert-koin:koin-androidx-compose:3.5.3")
 
 
     //Room Library
@@ -105,12 +106,9 @@ dependencies {
 //    kapt ("android.arch.persistence.room:compiler:1.1.1")
 //
 //    implementation("androidx.room:room-ktx:2.5.2")
-
-    val room_version = "2.5.2"
-
-    implementation("androidx.room:room-runtime:2.5.2")
-    ksp("androidx.room:room-compiler:2.5.2")
-    implementation ("androidx.room:room-ktx:2.5.2")
+    implementation("androidx.room:room-runtime:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
 
 
 
@@ -131,7 +129,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation ("com.google.truth:truth:1.0.1")
-    androidTestImplementation ("android.arch.core:core-testing:1.0.0")
+    androidTestImplementation ("android.arch.core:core-testing:1.1.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     // Test rules and transitive dependencies:
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")

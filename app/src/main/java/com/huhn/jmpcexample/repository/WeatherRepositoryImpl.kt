@@ -11,7 +11,7 @@ import com.huhn.jmpcexample.repository.localDataSource.dbModel.DBWeather
 import com.huhn.jmpcexample.repository.remoteDataSource.RetrofitHelper
 import com.huhn.jmpcexample.repository.remoteDataSource.WeatherApiService
 import com.huhn.jmpcexample.repository.remoteDataSource.networkModel.WeatherResponse
-import com.huhn.jmpcexample.viewmodel.WeatherUIState
+import com.huhn.jmpcexample.ui.WeatherUIState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -131,9 +131,7 @@ class WeatherRepositoryImpl : WeatherRepository {
         job.join()
 
         //convert DB Weather into WeatherUIState
-        return weather?.let {
-            it.convertToState()
-        }
+        return weather?.convertToState()
     }
 
     suspend fun saveWeatherLocal(dbWeather: DBWeather) {

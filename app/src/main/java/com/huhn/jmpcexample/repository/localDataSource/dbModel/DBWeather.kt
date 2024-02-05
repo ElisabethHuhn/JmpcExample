@@ -3,7 +3,7 @@ package com.huhn.jmpcexample.repository.localDataSource.dbModel
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.huhn.jmpcexample.viewmodel.WeatherUIState
+import com.huhn.jmpcexample.ui.WeatherUIState
 
 @Entity
 data class DBWeather(
@@ -26,7 +26,7 @@ data class DBWeather(
     @ColumnInfo(name = "sunset") val sunset: Int,
 )
 {
-    fun convertToState() : WeatherUIState{
+    fun convertToState() : WeatherUIState {
         return WeatherUIState(
             city = this.city,
             usState = this.state,
